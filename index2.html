@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Sabores | Ed. Vegana</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/icon_veg.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-C8Q1Ee/q2UdVQ6rAAd5dWv1/EgITtvpqCK3A4eP96Sst4Eae1tCuFd+7xFdPrk+1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="home" class="banner">
+        <div class="navbar">
+            <h1>MAR DEL <span>V E G A N</span></h1>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="index.html#seccion-lugares">Explora Sabores</a></li>
+                <li><a href="#formulario-nuevo-lugar">Envía tu Lugar</a></li>
+                <li><a href="#seccion-contacto">Contacto</a></li>
+            </ul>
+            <input type="text" id="search" placeholder="Buscar en Mapa de Sabores" />
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Mapa de <span>sabores</span></h1>
+        <p>Encontrá las mejores opciones veganas en Mar del Plata</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f3f4f5" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,154.7C672,160,768,192,864,176C960,160,1056,96,1152,58.7C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    
+    <div id="formulario-nuevo-lugar"><br><br><br>
+        <form id="nuevo-lugar-form">
+            <h3>Añade un nuevo Spot Vegano</h3>
+
+            <label for="nombre">Nombre del local:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="40"><br>
+    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required maxlength="40"><br>
+    
+            <label for="opciones">Opciones veganas:</label>
+            <input type="text" id="opciones" name="opciones" required maxlength="200"></input><br>
+    
+            <label for="precio">Rango de precios:</label>
+            <select id="precio" name="precio" required>
+                <option value="">Seleccione</option>
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+                <option value="$$$">$$$</option>
+            </select><br>
+    
+            <label for="email">Email de contacto:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="categoria">Categoría:</label><br>
+
+            <input type="radio" id="cafeteria" name="opcion" value="cafeteria"> Cafetería
+            <input type="radio" id="restaurante" name="opcion" value="restaurante"> Restaurante
+            <input type="radio" id="panaderia" name="opcion" value="panaderia"> Panadería
+            <input type="radio" id="fastFood" name="opcion" value="fastFood"> Fast Food
+            <input type="radio" id="takeAway" name="opcion" value="takeAway"> TakeAway <br><br>
+    
+            <label for="imagen">Subí una imagen del lugar:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="seccion-contacto">
+        <section class="contacto">
+            <h2 class="lato-regular">¿Alguna sugerencia? ¡Contactame!</h2>
+            <div class="contacto-icons">
+                <div class="icon">
+                    <img src="img/phone-logo.png" alt=" icon">
+                    <p>+54 9 223 536 3709</p>
+                </div>
+
+                <div class="icon">
+                    <img src="img/mail-logo.png" alt=" icon">
+                    <p>sofi2599@gmail.com</p>
+                </div>
+
+                <div class="icon">
+                    <img src="img/location-logo.png" alt=" icon">
+                    <p>Mar del Plata - Bs. As.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+</body>
+</html>
